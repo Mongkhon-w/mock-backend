@@ -1,7 +1,12 @@
-# Access & Refresh Token
+# 🚀 Finance Management System (Full-Stack)
+แอปพลิเคชันจัดการธุรกรรมทางการเงิน พัฒนาด้วยเทคโนโลยีสมัยใหม่ รองรับการสมัครสมาชิกและจัดการข้อมูลส่วนตัว
+
+## 🛠 Tech Stack
+* Database: MySQL / MariaDB
+* Frontend: React, Vite, React Router, Context API
+* Backend: Node.js, Express, Prisma (v7), Bcrypt
 
 ## Required
-
 * MySQL
 * Node.js
 * Express
@@ -12,13 +17,12 @@
 
 ## Develop
 
-### First time
+### 📂 Backend Setup
 
 ```bash
 npm init -y
-npm install express jsonwebtoken bcryptjs body-parser dotenv cookie-parser
-npm install prisma@latest @prisma/client@latest @prisma/adapter-mariadb mariadb
-npm install -D @types/node tsx
+npm install express bcrypt @prisma/client @prisma/adapter-mariadb mariadb dotenv cors
+npm install -D prisma
 npx prisma init
 ```
 *(อย่าลืมตั้งค่า `DATABASE_URL` ในไฟล์ `.env` ให้เรียบร้อย)*
